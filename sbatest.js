@@ -64,7 +64,7 @@ const randomRestaurant = numOfRestaurants =>{
     let random = 0;
     if(numOfRestaurants > 0){
         for(let i = 0; i < numOfRestaurants; i++){
-            random = Math.floor(Math.random()*numOfRestaurants);
+            random = Math.floor(Math.random()*restaurants.length);
             randomRestaurantList[i] = restaurants.at(random);
         }
     }
